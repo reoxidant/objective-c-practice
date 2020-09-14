@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Deck : NSObject
 
+- (void) addCard: (Card*)card atTop:(BOOL)atTop;
+
+- (void) addCard: (Card*)card;
+
+- (Card *) getRandomCard;
 @end
 
 NS_ASSUME_NONNULL_END

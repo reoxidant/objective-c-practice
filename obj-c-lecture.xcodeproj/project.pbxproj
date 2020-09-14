@@ -79,6 +79,7 @@
 				4455EE7F250E81D700E3305F /* Main.storyboard */,
 				4455EE7C250E81D700E3305F /* ViewController.h */,
 				4455EE7D250E81D700E3305F /* ViewController.m */,
+				4455EE87250E81D900E3305F /* Info.plist */,
 			);
 			path = "obj-c-lecture";
 			sourceTree = "<group>";
@@ -114,7 +115,6 @@
 				4455EE7A250E81D700E3305F /* SceneDelegate.m */,
 				4455EE84250E81D900E3305F /* LaunchScreen.storyboard */,
 				4455EE82250E81D900E3305F /* Assets.xcassets */,
-				4455EE87250E81D900E3305F /* Info.plist */,
 				4455EE88250E81D900E3305F /* main.m */,
 			);
 			path = SupportFiles;
@@ -277,6 +277,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "obj-c-lecture";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -328,6 +329,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "obj-c-lecture";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,7 +379,7 @@
 				4455EE8B250E81D900E3305F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4455EE8C250E81D900E3305F /* Build configuration list for PBXNativeTarget "obj-c-lecture" */ = {
 			isa = XCConfigurationList;
@@ -386,7 +388,7 @@
 				4455EE8E250E81D900E3305F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
