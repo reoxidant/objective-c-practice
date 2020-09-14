@@ -10,9 +10,7 @@
 
 @interface Card : NSObject
 
-@property (strong, nonatomic) NSString *contents;
-
-- (NSString *) contents;
+@property (strong, nonatomic, getter=isContents) NSString *contents;
 
 - (void) setContents: (NSString*) contents;
     

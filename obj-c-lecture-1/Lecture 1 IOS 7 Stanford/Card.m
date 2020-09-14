@@ -19,15 +19,15 @@
 @synthesize contents = _contents;
 
 //Getter
-- (NSString *) contents{
-    return _contents;
-}
+//- (NSString *) contents{
+//    return _contents;
+//}
 
 //Setter
 
-- (void) setContents: (NSString*) contents{
-    _contents = contents;
-}
+//- (void) setContents: (NSString*) contents{
+//    _contents = contents;
+//}
 
 
 @end

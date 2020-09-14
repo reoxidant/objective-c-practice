@@ -45,7 +45,7 @@
     
     [clCard setContents: @"Hello Vitaliy"];
     
-    NSLog(@"Card property: %@", [clCard contents]);
+    NSLog(@"Card property: %@", [clCard isContents]);
 }
 
 @end
