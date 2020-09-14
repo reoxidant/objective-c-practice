@@ -42,10 +42,14 @@
 //    [ASChildClass getReferenceClassBySelf]; //Return Class by reference self
     
     Card* clCard = [[Card alloc] init];
+    Card* clCardSecond = [[Card alloc] init];
     
-    [clCard setContents: @"Hello Vitaliy"];
+    [clCard setContents: @"King"];
+    [clCardSecond setContents: @"King"];
     
     NSLog(@"Card property: %@", [clCard isContents]);
+    
+    NSLog(@"Contens equal = %d", [clCard match: clCardSecond]);
 }
 
 @end

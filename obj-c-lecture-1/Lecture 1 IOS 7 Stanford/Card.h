@@ -13,5 +13,7 @@
 @property (strong, nonatomic, getter=isContents) NSString *contents;
 
 - (void) setContents: (NSString*) contents;
+
+- (int) match: (Card*) card;
     
 @end
