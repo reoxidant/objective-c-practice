@@ -17,6 +17,7 @@
 		4455EE91250E83EF00E3305F /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE90250E83EF00E3305F /* Card.m */; };
 		4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE94250F77AE00E3305F /* ASParentClass.m */; };
 		4455EE98250FA49700E3305F /* ASChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE97250FA49700E3305F /* ASChildClass.m */; };
+		4456AC8425100B59005D16E1 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4456AC8325100B59005D16E1 /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		4455EE94250F77AE00E3305F /* ASParentClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASParentClass.m; sourceTree = "<group>"; };
 		4455EE96250FA49700E3305F /* ASChildClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASChildClass.h; sourceTree = "<group>"; };
 		4455EE97250FA49700E3305F /* ASChildClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASChildClass.m; sourceTree = "<group>"; };
+		4456AC8225100B59005D16E1 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		4456AC8325100B59005D16E1 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				4455EE92250F775200E3305F /* AS Methods 1h */,
-				4455EE76250E81D700E3305F /* AppDelegate.h */,
-				4455EE77250E81D700E3305F /* AppDelegate.m */,
-				4455EE79250E81D700E3305F /* SceneDelegate.h */,
-				4455EE7A250E81D700E3305F /* SceneDelegate.m */,
-				4455EE99250FB59500E3305F /* Lecture 1 IOS 7 Stanford */,
+				4456AC8625100BB8005D16E1 /* SupportFiles */,
+				4455EE99250FB59500E3305F /* Card App */,
 				4455EE7F250E81D700E3305F /* Main.storyboard */,
-				4455EE82250E81D900E3305F /* Assets.xcassets */,
-				4455EE84250E81D900E3305F /* LaunchScreen.storyboard */,
-				4455EE87250E81D900E3305F /* Info.plist */,
-				4455EE88250E81D900E3305F /* main.m */,
+				4455EE7C250E81D700E3305F /* ViewController.h */,
+				4455EE7D250E81D700E3305F /* ViewController.m */,
 			);
 			path = "obj-c-lecture";
 			sourceTree = "<group>";
@@ -96,15 +94,30 @@
 			path = "AS Methods 1h";
 			sourceTree = "<group>";
 		};
-		4455EE99250FB59500E3305F /* Lecture 1 IOS 7 Stanford */ = {
+		4455EE99250FB59500E3305F /* Card App */ = {
 			isa = PBXGroup;
 			children = (
 				4455EE8F250E824F00E3305F /* Card.h */,
 				4455EE90250E83EF00E3305F /* Card.m */,
-				4455EE7C250E81D700E3305F /* ViewController.h */,
-				4455EE7D250E81D700E3305F /* ViewController.m */,
+				4456AC8225100B59005D16E1 /* Deck.h */,
+				4456AC8325100B59005D16E1 /* Deck.m */,
 			);
-			path = "Lecture 1 IOS 7 Stanford";
+			path = "Card App";
+			sourceTree = "<group>";
+		};
+		4456AC8625100BB8005D16E1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4455EE76250E81D700E3305F /* AppDelegate.h */,
+				4455EE77250E81D700E3305F /* AppDelegate.m */,
+				4455EE79250E81D700E3305F /* SceneDelegate.h */,
+				4455EE7A250E81D700E3305F /* SceneDelegate.m */,
+				4455EE84250E81D900E3305F /* LaunchScreen.storyboard */,
+				4455EE82250E81D900E3305F /* Assets.xcassets */,
+				4455EE87250E81D900E3305F /* Info.plist */,
+				4455EE88250E81D900E3305F /* main.m */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4456AC8425100B59005D16E1 /* Deck.m in Sources */,
 				4455EE98250FA49700E3305F /* ASChildClass.m in Sources */,
 				4455EE91250E83EF00E3305F /* Card.m in Sources */,
 				4455EE7E250E81D700E3305F /* ViewController.m in Sources */,
