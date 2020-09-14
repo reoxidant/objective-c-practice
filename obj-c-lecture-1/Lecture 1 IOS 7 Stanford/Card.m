@@ -29,11 +29,13 @@
 //    _contents = contents;
 //}
 
-- (int) match:(Card *)card{
+- (int) match:(NSArray *)arCard{
     int score = 0;
     
-    if([card.contents isEqualToString:self.contents]){
-        score = 1;
+    for (Card* card in arCard) {
+        if([card.contents isEqualToString:self.contents]){
+            score = 1;
+        }
     }
     
     return score;

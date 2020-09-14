@@ -14,6 +14,6 @@
 
 - (void) setContents: (NSString*) contents;
 
-- (int) match: (Card*) card;
+- (int) match:(NSArray *)arCard;
     
 @end

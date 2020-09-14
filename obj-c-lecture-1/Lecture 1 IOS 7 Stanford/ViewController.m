@@ -43,13 +43,17 @@
     
     Card* clCard = [[Card alloc] init];
     Card* clCardSecond = [[Card alloc] init];
+    Card* clCardThree = [[Card alloc] init];
     
     [clCard setContents: @"King"];
     [clCardSecond setContents: @"King"];
+    [clCardThree setContents: @"Valet"];
     
-    NSLog(@"Card property: %@", [clCard isContents]);
     
-    NSLog(@"Contens equal = %d", [clCard match: clCardSecond]);
+//    NSLog(@"Card property: %@", [clCard isContents]);
+
+    
+//    NSLog(@"Contens equal = %d", [clCard match: NSArray: []);
 }
 
 @end
