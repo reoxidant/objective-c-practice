@@ -42,6 +42,8 @@
     NSLog(@"Age = %zd", [boxer age]);
     NSLog(@"Height = %f", [boxer height]);
     NSLog(@"Weight = %f", [boxer weight]);
+    
+    NSLog(@"My height is: %f", [boxer whatIsYouHeight]);
 }
 
 /*

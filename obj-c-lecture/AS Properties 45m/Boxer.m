@@ -27,4 +27,16 @@
     return _name;
 }
 
+- (float) height {
+    NSLog(@"Height getter is called!");
+    
+    return _height;
+}
+
+- (float) whatIsYouHeight{
+    //redefined getter and call it
+    // return self.height;
+    return _height;
+}
+
 @end

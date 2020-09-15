@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) float height;
 @property (nonatomic) float weight;
 
+- (float) whatIsYouHeight;
+
 @end
 
 NS_ASSUME_NONNULL_END
