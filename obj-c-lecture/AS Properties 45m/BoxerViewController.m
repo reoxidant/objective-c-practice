@@ -32,6 +32,8 @@
 //    NSLog(@"Weight = %f", boxer.weight);
     
     //Setters and Getters
+    //If prop public
+//    [boxer setNameCount:0];
     
     [boxer setName:@"Masha"];
     [boxer setAge: 27];
@@ -39,6 +41,15 @@
     [boxer setWeight:90];
     
     NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Name = %@", [boxer name]);
+     //If prop public
+//    NSLog(@"Count say name is: %zd", [boxer nameCount]);
+    NSLog(@"Count say name is: %d", (int)[boxer getCountName]);
+    
     NSLog(@"Age = %zd", [boxer age]);
     NSLog(@"Height = %f", [boxer height]);
     NSLog(@"Weight = %f", [boxer weight]);

@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) float height;
 @property (nonatomic) float weight;
 
+//@property (assign, nonatomic) NSInteger nameCount;
+
+- (NSInteger*) getCountName;
+
 - (float) whatIsYouHeight;
 
 @end
