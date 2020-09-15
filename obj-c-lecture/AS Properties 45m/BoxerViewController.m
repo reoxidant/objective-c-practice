@@ -46,9 +46,9 @@
     NSLog(@"Name = %@", [boxer name]);
     NSLog(@"Name = %@", [boxer name]);
     NSLog(@"Name = %@", [boxer name]);
-     //If prop public
-//    NSLog(@"Count say name is: %zd", [boxer nameCount]);
-    NSLog(@"Count say name is: %d", (int)[boxer getCountName]);
+    //If prop public
+    //NSLog(@"Count say name is: %zd", [boxer nameCount]);
+    NSLog(@"Count say name is: %zd", [boxer getCountName]);
     
     NSLog(@"Age = %zd", [boxer age]);
     NSLog(@"Height = %f", [boxer height]);

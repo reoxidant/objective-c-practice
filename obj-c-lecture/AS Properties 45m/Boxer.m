@@ -56,7 +56,7 @@
     return _height;
 }
 
-- (NSInteger*) getCountName{
+- (NSInteger) getCountName{
     return self.nameCount;
 }
 

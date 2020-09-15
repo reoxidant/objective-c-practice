@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //@property (assign, nonatomic) NSInteger nameCount;
 
-- (NSInteger*) getCountName;
+- (NSInteger) getCountName;
 
 - (float) whatIsYouHeight;
 
