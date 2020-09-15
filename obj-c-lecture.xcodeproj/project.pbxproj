@@ -21,7 +21,7 @@
 		446F9F7725108844005A1A84 /* Boxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7625108844005A1A84 /* Boxer.m */; };
 		446F9F7B25108C83005A1A84 /* ASMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7925108C83005A1A84 /* ASMethodsViewController.m */; };
 		446F9F7F25108D0D005A1A84 /* BoxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7E25108D0D005A1A84 /* BoxerViewController.m */; };
-		446F9F8225108D1C005A1A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F8125108D1C005A1A84 /* ViewController.m */; };
+		446F9F8825109DE4005A1A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F8725109DE4005A1A84 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +51,8 @@
 		446F9F7925108C83005A1A84 /* ASMethodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMethodsViewController.m; sourceTree = "<group>"; };
 		446F9F7D25108D0D005A1A84 /* BoxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxerViewController.h; sourceTree = "<group>"; };
 		446F9F7E25108D0D005A1A84 /* BoxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxerViewController.m; sourceTree = "<group>"; };
-		446F9F8025108D1C005A1A84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		446F9F8125108D1C005A1A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		446F9F8625109DE4005A1A84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		446F9F8725109DE4005A1A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 				4455EE99250FB59500E3305F /* Card App */,
 				4455EE7F250E81D700E3305F /* Main.storyboard */,
 				4455EE87250E81D900E3305F /* Info.plist */,
-				446F9F8025108D1C005A1A84 /* ViewController.h */,
-				446F9F8125108D1C005A1A84 /* ViewController.m */,
+				446F9F8625109DE4005A1A84 /* ViewController.h */,
+				446F9F8725109DE4005A1A84 /* ViewController.m */,
 			);
 			path = "obj-c-lecture";
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 				4455EE91250E83EF00E3305F /* Card.m in Sources */,
 				446F9F7725108844005A1A84 /* Boxer.m in Sources */,
 				4455EE7E250E81D700E3305F /* CardViewController.m in Sources */,
-				446F9F8225108D1C005A1A84 /* ViewController.m in Sources */,
+				446F9F8825109DE4005A1A84 /* ViewController.m in Sources */,
 				4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */,
 				4455EE78250E81D700E3305F /* AppDelegate.m in Sources */,
 				4455EE89250E81D900E3305F /* main.m in Sources */,
@@ -293,7 +293,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -351,7 +351,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

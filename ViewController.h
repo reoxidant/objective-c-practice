@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BoxerViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController : BoxerViewController
+@interface ViewController : UIViewController
 
 @end
 

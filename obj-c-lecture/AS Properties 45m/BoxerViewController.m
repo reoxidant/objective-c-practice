@@ -7,6 +7,7 @@
 //
 
 #import "BoxerViewController.h"
+#import "Boxer.h"
 
 @interface BoxerViewController ()
 
@@ -17,6 +18,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Boxer* boxer = [[Boxer alloc] init];
+    
+//    boxer.name = @"Vitaliy";
+//    boxer.age = 25;
+//    boxer.height = 180.f;
+//    boxer.weight = 90.f;
+//
+//    NSLog(@"Name = %@", boxer.name);
+//    NSLog(@"Age = %zd", boxer.age);
+//    NSLog(@"Height = %f", boxer.height);
+//    NSLog(@"Weight = %f", boxer.weight);
+    
+    //Setters and Getters
+    
+    [boxer setName:@"Masha"];
+    [boxer setAge: 27];
+    [boxer setHeight:170];
+    [boxer setWeight:90];
+    
+    NSLog(@"Name = %@", [boxer name]);
+    NSLog(@"Age = %zd", [boxer age]);
+    NSLog(@"Height = %f", [boxer height]);
+    NSLog(@"Weight = %f", [boxer weight]);
 }
 
 /*

@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Boxer : NSObject
 
-@property (strong, nonatomic) NSString *name;
-@property (assign, nonatomic) NSInteger *age;
-@property (assign, nonatomic) float *height;
-@property (assign, nonatomic) float *weight;
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger age;
+@property (nonatomic) float height;
+@property (nonatomic) float weight;
 
 @end
 

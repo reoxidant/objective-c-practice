@@ -18,6 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    ASChildClass* parent = [[ASChildClass alloc] init];
+
+    [parent sayHello];
+        
+    [parent say: @"Masha in love me"];
+        
+    [parent sayAnother:@"How are you?" andSay:@"How is you day?" andEndSay:@"How is it going?"];
+        
+    NSLog(@"%@", [parent sayMyName]);
+        
+    NSLog(@"%@", [ASChildClass sayYouClassName]);
+        
+    NSLog(@" Current date is %@", [parent getDate]);
+        
+    NSLog(@"%@", [parent getParentDate]);
+        
+    [parent getMemoryScopeOfObjectBySelf]; //Scope Memory by reference self
+        
+    [ASChildClass getReferenceClassBySelf]; //Return Class by reference self
 }
 
 /*
@@ -29,25 +49,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-ASChildClass* parent = [[ASChildClass alloc] init];
-
-[parent sayHello];
-    
-[parent say: @"Masha in love me"];
-    
-[parent sayAnother:@"How are you?" andSay:@"How is you day?" andEndSay:@"How is it going?"];
-    
-NSLog(@"%@", [parent sayMyName]);
-    
-NSLog(@"%@", [ASChildClass sayYouClassName]);
-    
-NSLog(@" Current date is %@", [parent getDate]);
-    
-NSLog(@"%@", [parent getParentDate]);
-    
-[parent getMemoryScopeOfObjectBySelf]; //Scope Memory by reference self
-    
-[ASChildClass getReferenceClassBySelf]; //Return Class by reference self
     
 @end

@@ -9,11 +9,11 @@
 #import "CardViewController.h"
 #import "Card.h"
 
-@interface ViewController ()
+@interface CardViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
