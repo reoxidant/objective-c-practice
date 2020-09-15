@@ -13,7 +13,7 @@
 - (int) getScoreIfCardsEqual: (NSString*) card{
     int score = 0;
     
-    if([self.cardName isEqualToString: card]){
+    if([self.cardDescription isEqualToString: card]){
         return score+1;
     }
 

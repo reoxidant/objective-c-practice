@@ -10,7 +10,7 @@
 
 @interface Card : NSObject
 
-@property (strong, nonatomic) NSString *cardName;
+@property (strong, nonatomic) NSString *cardDescription;
 
 - (int) getScoreIfCardsEqual: (NSString*) card;
 @end
