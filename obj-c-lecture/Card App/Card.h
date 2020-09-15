@@ -10,10 +10,7 @@
 
 @interface Card : NSObject
 
-@property (strong, nonatomic, getter=isContents) NSString *contents;
+@property (strong, nonatomic) NSString *cardName;
 
-- (void) setContents: (NSString*) contents;
-
-- (int) match:(NSArray *)arCard;
-    
+- (int) getScoreIfCardsEqual: (NSString*) card;
 @end

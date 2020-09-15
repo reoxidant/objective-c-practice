@@ -8,38 +8,16 @@
 
 #import "Card.h"
 
-//private declaring
-@interface Card()
-    
-@end
-
 @implementation Card
 
-//instanse of variable
-@synthesize contents = _contents;
-
-//Getter
-//- (NSString *) contents{
-//    return _contents;
-//}
-
-//Setter
-
-//- (void) setContents: (NSString*) contents{
-//    _contents = contents;
-//}
-
-- (int) match:(NSArray *)arCard{
+- (int) getScoreIfCardsEqual: (NSString*) card{
     int score = 0;
     
-    for (Card* card in arCard) {
-        if([card.contents isEqualToString:self.contents]){
-            score = 1;
-        }
+    if([self.cardName isEqualToString: card]){
+        return score+1;
     }
-    
+
     return score;
 }
-
 
 @end

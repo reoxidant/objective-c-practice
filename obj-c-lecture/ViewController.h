@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BoxerViewController.h"
+//#import "BoxerViewController.h"
+#import "CardViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController : BoxerViewController
+//@interface ViewController : BoxerViewController
+@interface ViewController : CardViewController
 
 @end
 

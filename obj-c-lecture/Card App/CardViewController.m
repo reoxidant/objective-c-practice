@@ -19,19 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    Card* clCard = [[Card alloc] init];
-    Card* clCardSecond = [[Card alloc] init];
-    Card* clCardThree = [[Card alloc] init];
+    Card* cardOne = [[Card alloc] init];
+    [cardOne setCardName:@"King"];
+    Card* cardTwo = [[Card alloc] init];
+    [cardTwo setCardName:@"Dama"];
     
-    [clCard setContents: @"King"];
-    [clCardSecond setContents: @"King"];
-    [clCardThree setContents: @"Valet"];
+    NSLog(@"If content card of equal content card you will getting 1 alse 0: %d", [cardOne getScoreIfCardsEqual: @"King"]);
     
-    
-//    NSLog(@"Card property: %@", [clCard isContents]);
-
-    
-//    NSLog(@"Contens equal = %d", [clCard match: NSArray: []);
+    NSLog(@"Name card is: %@", [cardOne cardName]);
+    NSLog(@"Name card is: %@", [cardTwo cardName]);
 }
 
 @end
