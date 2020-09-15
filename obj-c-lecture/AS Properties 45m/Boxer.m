@@ -9,5 +9,22 @@
 #import "Boxer.h"
 
 @implementation Boxer
+@synthesize name = _name;
+
+//- (void) setName:(NSString*) inputName{
+//    _name = @"Hello setter is was be hacked";
+//}
+
+//- (NSString*) name{
+//    return @"Are you sure? getter is was be a hacked";
+//}
+
+- (void) setName:(NSString*) inputName{
+    _name = inputName;
+}
+
+- (NSString*) name{
+    return _name;
+}
 
 @end
