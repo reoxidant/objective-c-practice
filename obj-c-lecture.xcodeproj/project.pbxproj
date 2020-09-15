@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4455EE78250E81D700E3305F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE77250E81D700E3305F /* AppDelegate.m */; };
 		4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7A250E81D700E3305F /* SceneDelegate.m */; };
-		4455EE7E250E81D700E3305F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7D250E81D700E3305F /* ViewController.m */; };
+		4455EE7E250E81D700E3305F /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7D250E81D700E3305F /* CardViewController.m */; };
 		4455EE81250E81D700E3305F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4455EE7F250E81D700E3305F /* Main.storyboard */; };
 		4455EE83250E81D900E3305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4455EE82250E81D900E3305F /* Assets.xcassets */; };
 		4455EE86250E81D900E3305F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4455EE84250E81D900E3305F /* LaunchScreen.storyboard */; };
@@ -18,6 +18,10 @@
 		4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE94250F77AE00E3305F /* ASParentClass.m */; };
 		4455EE98250FA49700E3305F /* ASChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE97250FA49700E3305F /* ASChildClass.m */; };
 		4456AC8425100B59005D16E1 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4456AC8325100B59005D16E1 /* Deck.m */; };
+		446F9F7725108844005A1A84 /* Boxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7625108844005A1A84 /* Boxer.m */; };
+		446F9F7B25108C83005A1A84 /* ASMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7925108C83005A1A84 /* ASMethodsViewController.m */; };
+		446F9F7F25108D0D005A1A84 /* BoxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7E25108D0D005A1A84 /* BoxerViewController.m */; };
+		446F9F8225108D1C005A1A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F8125108D1C005A1A84 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,8 @@
 		4455EE77250E81D700E3305F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4455EE79250E81D700E3305F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		4455EE7A250E81D700E3305F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		4455EE7C250E81D700E3305F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4455EE7D250E81D700E3305F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4455EE7C250E81D700E3305F /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		4455EE7D250E81D700E3305F /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		4455EE80250E81D700E3305F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4455EE82250E81D900E3305F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4455EE85250E81D900E3305F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 		4455EE97250FA49700E3305F /* ASChildClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASChildClass.m; sourceTree = "<group>"; };
 		4456AC8225100B59005D16E1 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		4456AC8325100B59005D16E1 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		446F9F7525108844005A1A84 /* Boxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boxer.h; sourceTree = "<group>"; };
+		446F9F7625108844005A1A84 /* Boxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boxer.m; sourceTree = "<group>"; };
+		446F9F7825108C83005A1A84 /* ASMethodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASMethodsViewController.h; sourceTree = "<group>"; };
+		446F9F7925108C83005A1A84 /* ASMethodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMethodsViewController.m; sourceTree = "<group>"; };
+		446F9F7D25108D0D005A1A84 /* BoxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxerViewController.h; sourceTree = "<group>"; };
+		446F9F7E25108D0D005A1A84 /* BoxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxerViewController.m; sourceTree = "<group>"; };
+		446F9F8025108D1C005A1A84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		446F9F8125108D1C005A1A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +85,14 @@
 		4455EE75250E81D700E3305F /* obj-c-lecture */ = {
 			isa = PBXGroup;
 			children = (
+				446F9F74251086D4005A1A84 /* AS Properties 45m */,
 				4455EE92250F775200E3305F /* AS Methods 1h */,
 				4456AC8625100BB8005D16E1 /* SupportFiles */,
 				4455EE99250FB59500E3305F /* Card App */,
 				4455EE7F250E81D700E3305F /* Main.storyboard */,
-				4455EE7C250E81D700E3305F /* ViewController.h */,
-				4455EE7D250E81D700E3305F /* ViewController.m */,
 				4455EE87250E81D900E3305F /* Info.plist */,
+				446F9F8025108D1C005A1A84 /* ViewController.h */,
+				446F9F8125108D1C005A1A84 /* ViewController.m */,
 			);
 			path = "obj-c-lecture";
 			sourceTree = "<group>";
@@ -91,6 +104,8 @@
 				4455EE94250F77AE00E3305F /* ASParentClass.m */,
 				4455EE96250FA49700E3305F /* ASChildClass.h */,
 				4455EE97250FA49700E3305F /* ASChildClass.m */,
+				446F9F7825108C83005A1A84 /* ASMethodsViewController.h */,
+				446F9F7925108C83005A1A84 /* ASMethodsViewController.m */,
 			);
 			path = "AS Methods 1h";
 			sourceTree = "<group>";
@@ -102,6 +117,8 @@
 				4455EE90250E83EF00E3305F /* Card.m */,
 				4456AC8225100B59005D16E1 /* Deck.h */,
 				4456AC8325100B59005D16E1 /* Deck.m */,
+				4455EE7C250E81D700E3305F /* CardViewController.h */,
+				4455EE7D250E81D700E3305F /* CardViewController.m */,
 			);
 			path = "Card App";
 			sourceTree = "<group>";
@@ -118,6 +135,17 @@
 				4455EE88250E81D900E3305F /* main.m */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		446F9F74251086D4005A1A84 /* AS Properties 45m */ = {
+			isa = PBXGroup;
+			children = (
+				446F9F7525108844005A1A84 /* Boxer.h */,
+				446F9F7625108844005A1A84 /* Boxer.m */,
+				446F9F7D25108D0D005A1A84 /* BoxerViewController.h */,
+				446F9F7E25108D0D005A1A84 /* BoxerViewController.m */,
+			);
+			path = "AS Properties 45m";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,13 +219,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4456AC8425100B59005D16E1 /* Deck.m in Sources */,
+				446F9F7F25108D0D005A1A84 /* BoxerViewController.m in Sources */,
 				4455EE98250FA49700E3305F /* ASChildClass.m in Sources */,
 				4455EE91250E83EF00E3305F /* Card.m in Sources */,
-				4455EE7E250E81D700E3305F /* ViewController.m in Sources */,
+				446F9F7725108844005A1A84 /* Boxer.m in Sources */,
+				4455EE7E250E81D700E3305F /* CardViewController.m in Sources */,
+				446F9F8225108D1C005A1A84 /* ViewController.m in Sources */,
 				4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */,
 				4455EE78250E81D700E3305F /* AppDelegate.m in Sources */,
 				4455EE89250E81D900E3305F /* main.m in Sources */,
 				4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */,
+				446F9F7B25108C83005A1A84 /* ASMethodsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

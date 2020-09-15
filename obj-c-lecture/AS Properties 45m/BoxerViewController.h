@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BoxerViewController.h
 //  obj-c-lecture
 //
 //  Created by Виталий Шаповалов on 15.09.2020.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BoxerViewController : UIViewController
 
 @end
+
+NS_ASSUME_NONNULL_END

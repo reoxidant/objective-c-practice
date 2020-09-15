@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  obj-c-lecture
+//  obj-c-lecture-1
 //
-//  Created by Виталий Шаповалов on 15.09.2020.
+//  Created by Виталий Шаповалов on 13.09.2020.
 //  Copyright © 2020 Виталий Шаповалов. All rights reserved.
 //
 
@@ -11,3 +11,4 @@
 @interface ViewController : UIViewController
 
 @end
+
