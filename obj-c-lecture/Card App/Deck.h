@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSMutableArray*) showCards;
 
+- (Card*) getRandomCard;
+
 @end
 
 NS_ASSUME_NONNULL_END

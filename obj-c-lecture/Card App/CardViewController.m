@@ -24,18 +24,24 @@
     [cardOne setCardName:@"King"];
     Card* cardTwo = [[Card alloc] init];
     [cardTwo setCardName:@"Dama"];
+    Card* cardThree = [[Card alloc] init];
+    [cardThree setCardName:@"Valet"];
     
     NSLog(@"If content card of equal content card you will getting 1 alse 0 return: %d", [cardOne getScoreIfCardsEqual: [cardTwo cardName]]);
     
     NSLog(@"Name card is: %@", [cardOne cardName]);
     NSLog(@"Name card is: %@", [cardTwo cardName]);
+    NSLog(@"Name card is: %@", [cardThree cardName]);
     
     Deck* deckFirst = [[Deck alloc] init];
     
     [deckFirst addCard:cardOne];
     [deckFirst addCard:cardTwo atTop:YES];
+    [deckFirst addCard:cardThree];
     
     NSLog(@"Cards of desk is: %@", [deckFirst showCards]);
+    
+    NSLog(@"Get random card by name: %@", [[deckFirst getRandomCard] cardName]);
 }
 
 @end
