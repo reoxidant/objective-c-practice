@@ -8,6 +8,7 @@
 
 #import "CardViewController.h"
 #import "Card.h"
+#import "Deck.h"
 
 @interface CardViewController ()
 
@@ -24,10 +25,17 @@
     Card* cardTwo = [[Card alloc] init];
     [cardTwo setCardName:@"Dama"];
     
-    NSLog(@"If content card of equal content card you will getting 1 alse 0: %d", [cardOne getScoreIfCardsEqual: @"King"]);
+    NSLog(@"If content card of equal content card you will getting 1 alse 0 return: %d", [cardOne getScoreIfCardsEqual: [cardTwo cardName]]);
     
     NSLog(@"Name card is: %@", [cardOne cardName]);
     NSLog(@"Name card is: %@", [cardTwo cardName]);
+    
+    Deck* deckFirst = [[Deck alloc] init];
+    
+    [deckFirst addCard:cardOne];
+    [deckFirst addCard:cardTwo atTop:YES];
+    
+    NSLog(@"Cards of desk is: %@", [deckFirst showCards]);
 }
 
 @end
