@@ -10,10 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
+@class ASObject;
 
 @interface ASObjectViewController : UIViewController
 
+@property (strong, nonatomic) ASObject* objPropOfClass;
 
 
 @end

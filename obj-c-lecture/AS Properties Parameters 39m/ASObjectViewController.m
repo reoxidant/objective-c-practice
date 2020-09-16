@@ -21,6 +21,8 @@
 
 - (void) initObject{
     ASObject* object = [[ASObject alloc] init];
+    
+    self.objPropOfClass = object;
 }
 
 
