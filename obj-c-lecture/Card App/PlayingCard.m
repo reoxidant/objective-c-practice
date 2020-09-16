@@ -15,4 +15,7 @@
     return [rankStringCards[self.rank] stringByAppendingString:self.suit];
 }
 
+- (NSString*) suit{
+    return _suit ? _suit : @"?";
+}
 @end
