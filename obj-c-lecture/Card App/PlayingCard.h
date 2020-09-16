@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString* suit;
 @property (nonatomic) NSUInteger rank;
 
++ (NSArray*)rankStringCards;
++ (NSArray*)validSuitValues;
++ (NSUInteger)maxRank;
+
 @end
 
 NS_ASSUME_NONNULL_END
