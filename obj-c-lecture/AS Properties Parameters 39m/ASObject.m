@@ -10,8 +10,17 @@
 
 @implementation ASObject
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"Create a new object!");
+    }
+    return self;
+}
+
 - (void) dealloc{
-    NSLog(@"My class is dead!");
+    NSLog(@"My created object is dead his removed from memory!");
 }
 
 @end
