@@ -1,19 +1,17 @@
 //
-//  PropParameters.h
+//  PropParameters.m
 //  obj-c-lecture
 //
 //  Created by Виталий Шаповалов on 16.09.2020.
 //  Copyright © 2020 Виталий Шаповалов. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ASObject.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@implementation ASObject
 
-@interface ASObject : NSObject
-
-
+- (void) dealloc{
+    NSLog(@"My class is dead!");
+}
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -13,7 +13,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"logo");
+    
+    [self initObject];
+    
+    NSLog(@"Game is over!");
 }
+
+- (void) initObject{
+    ASObject* object = [[ASObject alloc] init];
+}
+
 
 @end

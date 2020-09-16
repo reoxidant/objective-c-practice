@@ -1,17 +1,17 @@
 //
-//  PropParametersViewController.h
+//  PropParameters.h
 //  obj-c-lecture
 //
 //  Created by Виталий Шаповалов on 16.09.2020.
 //  Copyright © 2020 Виталий Шаповалов. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PropParametersViewController : UIViewController
+@interface ASObject : NSObject
 
-@end
+@end 
 
 NS_ASSUME_NONNULL_END
