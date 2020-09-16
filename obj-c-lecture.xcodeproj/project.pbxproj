@@ -112,7 +112,7 @@
 				446F9F74251086D4005A1A84 /* AS Properties 45m */,
 				4455EE92250F775200E3305F /* AS Methods 1h */,
 				4456AC8625100BB8005D16E1 /* SupportFiles */,
-				4455EE99250FB59500E3305F /* Card App */,
+				4455EE99250FB59500E3305F /* Card App Stanford 1-2 lecture */,
 				4455EE7F250E81D700E3305F /* Main.storyboard */,
 				4455EE87250E81D900E3305F /* Info.plist */,
 				446F9F8625109DE4005A1A84 /* ViewController.h */,
@@ -134,7 +134,7 @@
 			path = "AS Methods 1h";
 			sourceTree = "<group>";
 		};
-		4455EE99250FB59500E3305F /* Card App */ = {
+		4455EE99250FB59500E3305F /* Card App Stanford 1-2 lecture */ = {
 			isa = PBXGroup;
 			children = (
 				4455EE8F250E824F00E3305F /* Card.h */,
@@ -148,7 +148,7 @@
 				4412ED5F25120E2600B94FC2 /* PlayingCardDeck.h */,
 				4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */,
 			);
-			path = "Card App";
+			path = "Card App Stanford 1-2 lecture";
 			sourceTree = "<group>";
 		};
 		4456AC8625100BB8005D16E1 /* SupportFiles */ = {
