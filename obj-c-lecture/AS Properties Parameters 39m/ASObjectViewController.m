@@ -16,17 +16,19 @@
     
     [self initObject];
     
-    ASObject* secondObj = [[ASObject alloc] init];
+//    ASObject* secondObj = [[ASObject alloc] init];
     
 //    self.objPropOfClass = nil;
     
-    self.objPropOfClass = secondObj;
+//    self.objPropOfClass = secondObj;
     
     NSLog(@"Game is over!");
 }
 
 - (void) initObject{
     ASObject* object = [[ASObject alloc] init];
+    
+    [object setName:@"My first object"];
     
     self.objPropOfClass = object;
 }

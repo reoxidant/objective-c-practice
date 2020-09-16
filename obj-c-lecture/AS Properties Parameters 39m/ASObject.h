@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ASObject : NSObject
+@interface ASObject : NSObject <NSCopying>
+
+@property (strong, nonatomic) NSString* name;
 
 @end 
 

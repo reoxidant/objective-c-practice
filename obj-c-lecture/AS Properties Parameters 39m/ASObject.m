@@ -23,4 +23,21 @@
     NSLog(@"My created object is dead his removed from memory!");
 }
 
+//- (id)copyWithZone:(nullable NSZone *)zone{
+//    return [[ASObject alloc] init];
+//}
+
+//deap copy with propertiess
+
+- (id)copyWithZone:(nullable NSZone *)zone{
+    ASObject* newObj = [[ASObject alloc] init];
+    newObj.name = [self.name stringByAppendingFormat:@" copying to another Object!"];
+    return newObj;
+}
+
+- (void) setName: name{
+    NSLog(@"Name object is %@", name);
+    _name = name;
+}
+
 @end

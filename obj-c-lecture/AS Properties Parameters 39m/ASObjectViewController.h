@@ -14,8 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ASObjectViewController : UIViewController
 
-@property (strong, nonatomic) ASObject* objPropOfClass;
+//@property (strong, nonatomic) ASObject* objPropOfClass;
+//@property (assign, nonatomic) NSUInteger age; // use assing when define a primitive types only!!!
 
+
+@property (copy, nonatomic) ASObject* objPropOfClass;
 
 @end
 
