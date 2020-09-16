@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 //#import "BoxerViewController.h"
-#import "CardViewController.h"
+//#import "CardViewController.h"
+#import "PropParametersViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 //@interface ViewController : BoxerViewController
-@interface ViewController : CardViewController
+@interface ViewController: PropParametersViewController
 
 @end
 

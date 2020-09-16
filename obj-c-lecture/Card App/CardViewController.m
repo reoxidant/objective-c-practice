@@ -44,7 +44,7 @@
     
     NSLog(@"Cards of desk is: %@", [deckFirst showCards]);
     
-    NSLog(@"Get random card by name: %@", [[deckFirst getRandomCard] cardDescription]);
+    NSLog(@"Get random card by name: %@", [[deckFirst randomCard] cardDescription]);
     
     [pcard setSuit:@"King"];
     [pcard setRank:1];

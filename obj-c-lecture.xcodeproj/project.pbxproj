@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4412ED6125120E2600B94FC2 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */; };
+		4412ED65251231DF00B94FC2 /* PropParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4412ED64251231DF00B94FC2 /* PropParameters.m */; };
+		4412ED682512324600B94FC2 /* PropParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4412ED672512324600B94FC2 /* PropParametersViewController.m */; };
 		4455EE78250E81D700E3305F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE77250E81D700E3305F /* AppDelegate.m */; };
 		4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7A250E81D700E3305F /* SceneDelegate.m */; };
 		4455EE7E250E81D700E3305F /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7D250E81D700E3305F /* CardViewController.m */; };
@@ -29,6 +31,10 @@
 /* Begin PBXFileReference section */
 		4412ED5F25120E2600B94FC2 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		4412ED63251231DF00B94FC2 /* PropParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropParameters.h; sourceTree = "<group>"; };
+		4412ED64251231DF00B94FC2 /* PropParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropParameters.m; sourceTree = "<group>"; };
+		4412ED662512324600B94FC2 /* PropParametersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropParametersViewController.h; sourceTree = "<group>"; };
+		4412ED672512324600B94FC2 /* PropParametersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropParametersViewController.m; sourceTree = "<group>"; };
 		4455EE73250E81D700E3305F /* obj-c-lecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "obj-c-lecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4455EE76250E81D700E3305F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4455EE77250E81D700E3305F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4412ED622512319B00B94FC2 /* AS Properties Parameters 39m */ = {
+			isa = PBXGroup;
+			children = (
+				4412ED63251231DF00B94FC2 /* PropParameters.h */,
+				4412ED64251231DF00B94FC2 /* PropParameters.m */,
+				4412ED662512324600B94FC2 /* PropParametersViewController.h */,
+				4412ED672512324600B94FC2 /* PropParametersViewController.m */,
+			);
+			path = "AS Properties Parameters 39m";
+			sourceTree = "<group>";
+		};
 		4455EE6A250E81D700E3305F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +108,7 @@
 		4455EE75250E81D700E3305F /* obj-c-lecture */ = {
 			isa = PBXGroup;
 			children = (
+				4412ED622512319B00B94FC2 /* AS Properties Parameters 39m */,
 				446F9F74251086D4005A1A84 /* AS Properties 45m */,
 				4455EE92250F775200E3305F /* AS Methods 1h */,
 				4456AC8625100BB8005D16E1 /* SupportFiles */,
@@ -234,12 +252,14 @@
 				4455EE91250E83EF00E3305F /* Card.m in Sources */,
 				446F9F7725108844005A1A84 /* Boxer.m in Sources */,
 				4455EE7E250E81D700E3305F /* CardViewController.m in Sources */,
+				4412ED65251231DF00B94FC2 /* PropParameters.m in Sources */,
 				446F9F8825109DE4005A1A84 /* ViewController.m in Sources */,
 				4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */,
 				4455EE78250E81D700E3305F /* AppDelegate.m in Sources */,
 				4455EE89250E81D900E3305F /* main.m in Sources */,
 				446F9F8B25110AB9005A1A84 /* PlayingCard.m in Sources */,
 				4412ED6125120E2600B94FC2 /* PlayingCardDeck.m in Sources */,
+				4412ED682512324600B94FC2 /* PropParametersViewController.m in Sources */,
 				4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */,
 				446F9F7B25108C83005A1A84 /* ASMethodsViewController.m in Sources */,
 			);
