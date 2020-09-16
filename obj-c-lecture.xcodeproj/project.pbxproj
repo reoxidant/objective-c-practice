@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4412ED6125120E2600B94FC2 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */; };
 		4455EE78250E81D700E3305F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE77250E81D700E3305F /* AppDelegate.m */; };
 		4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7A250E81D700E3305F /* SceneDelegate.m */; };
 		4455EE7E250E81D700E3305F /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455EE7D250E81D700E3305F /* CardViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4412ED5F25120E2600B94FC2 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		4455EE73250E81D700E3305F /* obj-c-lecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "obj-c-lecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4455EE76250E81D700E3305F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4455EE77250E81D700E3305F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				446F9F8A25110AB9005A1A84 /* PlayingCard.m */,
 				4455EE7C250E81D700E3305F /* CardViewController.h */,
 				4455EE7D250E81D700E3305F /* CardViewController.m */,
+				4412ED5F25120E2600B94FC2 /* PlayingCardDeck.h */,
+				4412ED6025120E2600B94FC2 /* PlayingCardDeck.m */,
 			);
 			path = "Card App";
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				4455EE78250E81D700E3305F /* AppDelegate.m in Sources */,
 				4455EE89250E81D900E3305F /* main.m in Sources */,
 				446F9F8B25110AB9005A1A84 /* PlayingCard.m in Sources */,
+				4412ED6125120E2600B94FC2 /* PlayingCardDeck.m in Sources */,
 				4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */,
 				446F9F7B25108C83005A1A84 /* ASMethodsViewController.m in Sources */,
 			);
