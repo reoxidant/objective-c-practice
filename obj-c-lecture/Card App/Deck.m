@@ -35,7 +35,7 @@
     return _cards;
 }
 
-- (Card*) getRandomCard{
+- (Card*) randomCard{
     Card* randomCard = nil;
     
     if([self.cards count]){
