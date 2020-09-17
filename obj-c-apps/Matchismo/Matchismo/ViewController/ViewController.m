@@ -20,7 +20,7 @@
 @implementation ViewController
 
 - (Deck*) deck{
-    if(_deck){
+    if(!_deck){
         _deck = [[PlayingCardDeck alloc] init];
     }
     return _deck;
@@ -33,18 +33,23 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    if([sender.currentTitle length]){
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
-        [sender setTitle:@""
-                forState:UIControlStateNormal];
+    if([[self.deck cards] count]){
+        if([sender.currentTitle length]){
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                              forState:UIControlStateNormal];
+            [sender setTitle:@""
+                    forState:UIControlStateNormal];
+        }else{
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                              forState:UIControlStateNormal];
+            [sender setTitle:[self.deck randomCard].contents
+                    forState:UIControlStateNormal];
+            NSLog(@"Has cards in deck: %zd", [[self.deck cards] count] );
+        }
+        self.flipCount++;
     }else{
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
-                          forState:UIControlStateNormal];
-        [sender setTitle:[self.deck randomCard].contents
-                forState:UIControlStateNormal];
-       
+        [self.flipsLabel setText:@"Deck is over!"];
     }
-    self.flipCount++;
 }
 
 @end

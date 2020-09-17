@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) addCard: (Card*) card;
 - (Card*) randomCard;
 
+@property (strong, nonatomic) NSMutableArray *cards;
+
 @end
 
 NS_ASSUME_NONNULL_END
