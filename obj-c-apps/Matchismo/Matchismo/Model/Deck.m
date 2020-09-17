@@ -23,9 +23,9 @@
 
 - (void) addCard: (Card*) card atTop: (BOOL) atTop{
     if(atTop){
-        [_cards insertObject:card atIndex:0];
+        [self.cards insertObject:card atIndex:0];
     }else{
-        [_cards addObject:card];
+        [self.cards addObject:card];
     }
 }
 
