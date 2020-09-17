@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck* deck;
-
 @end
 
 @implementation ViewController
@@ -35,21 +34,30 @@
 - (IBAction)touchCardButton:(UIButton *)sender {
     if([[self.deck cards] count]){
         if([sender.currentTitle length]){
-            [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
-                              forState:UIControlStateNormal];
-            [sender setTitle:@""
-                    forState:UIControlStateNormal];
+            [self flipCardToBack:sender];
         }else{
-            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
-                              forState:UIControlStateNormal];
-            [sender setTitle:[self.deck randomCard].contents
-                    forState:UIControlStateNormal];
+            [self flopCardToFront:sender];
             NSLog(@"Has cards in deck: %zd", [[self.deck cards] count] );
         }
         self.flipCount++;
     }else{
-        [self.flipsLabel setText:@"Deck is over!"];
+        [self flipCardToBack:sender];
+        [self.flipsLabel setText:@"Cards in the deck is over!"];
     }
+}
+
+- (void) flipCardToBack: sender{
+    [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                      forState:UIControlStateNormal];
+    [sender setTitle:@""
+            forState:UIControlStateNormal];
+}
+
+- (void) flopCardToFront: sender{
+    [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                      forState:UIControlStateNormal];
+    [sender setTitle:[self.deck randomCard].contents
+            forState:UIControlStateNormal];
 }
 
 @end
