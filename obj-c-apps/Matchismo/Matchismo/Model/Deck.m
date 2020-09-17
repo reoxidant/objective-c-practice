@@ -9,7 +9,7 @@
 #import "Deck.h"
 
 @interface Deck()
-
+@property (strong, nonatomic) NSMutableArray *cards;
 @end
 
 @implementation Deck
@@ -40,6 +40,7 @@
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex:index];
+        NSLog(@"Count cards %d", [self.cards count]);
     }
     return randomCard;
 }
