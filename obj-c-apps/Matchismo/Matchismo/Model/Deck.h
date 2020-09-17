@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Deck : Card
+@interface Deck : NSObject
 
 - (void) addCard: (Card*) card atTop: (BOOL) atTop;
 - (void) addCard: (Card*) card;

@@ -14,7 +14,7 @@
 
 @implementation Deck
 
-- (NSArray*) cards{
+- (NSMutableArray*) cards{
     if(!_cards){
         _cards = [[NSMutableArray alloc] init];
     }
@@ -30,8 +30,9 @@
 }
 
 - (void) addCard: (Card*) card{
-    
+    [self addCard:card atTop:NO];
 }
+
 - (Card*) randomCard{
     Card* randomCard = nil;
     

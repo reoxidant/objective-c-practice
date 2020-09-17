@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface ViewController ()
 
@@ -29,7 +30,7 @@
         [sender setTitle:@"" forState:UIControlStateNormal];
     }else{
         [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
     }
     self.flipCount++;
 }
