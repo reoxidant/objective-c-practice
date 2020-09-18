@@ -28,7 +28,15 @@
     self = [super init];//super's designated initializer
     
     if(self){
-        
+        for(int i = 0; i < count; i++){
+            Card* card = [deck randomCard];
+            if(card){
+                [self.cards addObject:card];
+            }else{
+                self = nil;
+                break;
+            }
+        }
     }
     
     return self;
