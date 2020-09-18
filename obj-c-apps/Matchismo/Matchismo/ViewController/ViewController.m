@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PlayingCardDeck.h"
+#import "CardMatchingGame.h"
 
 @interface ViewController ()
 
@@ -15,15 +16,30 @@
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck* deck;
 @property (nonatomic) BOOL addNewFlip;
+@property (nonatomic, strong) CardMatchingGame *game;
+
 @end
 
 @implementation ViewController
 
+
+- (CardMatchingGame*)game{
+    if(!_game)
+    {
+        _game = [[CardMatchingGame alloc]initWithCardCount:0 usingDeck:[self createDeck]];
+    }
+    return _game;
+}
+
 - (Deck*) deck{
     if(!_deck){
-        _deck = [[PlayingCardDeck alloc] init];
+        _deck = [self createDeck];
     }
     return _deck;
+}
+
+- (PlayingCardDeck*) createDeck{
+    return [[PlayingCardDeck alloc] init];
 }
 
 - (void) setFlipCount:(int)flipCount{

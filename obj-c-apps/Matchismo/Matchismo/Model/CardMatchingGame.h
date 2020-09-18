@@ -14,11 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CardMatchingGame : NSObject
 
-- (instancetype)
-initWithCardCount: (NSUInteger)count usingDeck: (Deck*) deck;
+//designated initializer
+- (instancetype) initWithCardCount: (NSUInteger)count
+                         usingDeck: (Deck*) deck;
 
-- (void) chooseCardAtIndex: (NSUInteger)index;
 - (Card *) cardAtIndex: (NSUInteger) index;
+- (void) chooseCardAtIndex: (NSUInteger)index;
 
 @property (nonatomic, readonly) NSInteger score;
 

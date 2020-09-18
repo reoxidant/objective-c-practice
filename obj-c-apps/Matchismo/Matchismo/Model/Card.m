@@ -24,12 +24,4 @@
     return score;
 }
 
-- (BOOL) isChosen{
-    return _chosen;
-}
-
-- (BOOL) isMatched{
-    return _matched;
-}
-
 @end
