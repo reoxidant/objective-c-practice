@@ -56,32 +56,32 @@ static const int COST_TO_CHOOSE = 1;
     
     if(!card.isMatched)
     {
-        card.chosen = NO;
-    }
-    else
-    {
-        //match against other chosen cards
-        for(Card *otherCards in self.cards)
-        {
-            if(otherCards.isChosen && !otherCards.isMatched)
+        if(card.isChosen){
+            card.chosen = NO;
+        }else{
+            //match against other chosen cards
+            for(Card *otherCards in self.cards)
             {
-                int matchScore = [card match:@[otherCards]];
-                if(matchScore)
+                if(otherCards.isChosen && !otherCards.isMatched)
                 {
-                    self.score += matchScore * MATCH_BONUS;
-                    otherCards.chosen = YES;
-                    card.matched = YES;
+                    int matchScore = [card match:@[otherCards]];
+                    if(matchScore)
+                    {
+                        self.score += matchScore * MATCH_BONUS;
+                        otherCards.chosen = YES;
+                        card.matched = YES;
+                    }
+                    else
+                    {
+                        self.score -= MISMATCH_PENALTY;
+                        otherCards.chosen = NO;
+                    }
+                    break;
                 }
-                else
-                {
-                    self.score -= MISMATCH_PENALTY;
-                    otherCards.chosen = NO;
-                }
-                break;
             }
+            self.score -= COST_TO_CHOOSE;
+            card.chosen = YES;
         }
-        self.score -= COST_TO_CHOOSE;
-        card.chosen = YES;
     }
 }
 
