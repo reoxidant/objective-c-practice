@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 //#import "BoxerViewController.h"
 //#import "CardViewController.h"
-#import "ASObjectViewController.h"
+//#import "ASObjectViewController.h"
+//#import "ViewNSArrayTestViewController.h"
+#import "ViewTypeTestController.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 //@interface ViewController : BoxerViewController
-@interface ViewController: ASObjectViewController
+@interface ViewController: ViewTypeTestController
 
 @end
 

@@ -26,6 +26,13 @@
 		446F9F7F25108D0D005A1A84 /* BoxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F7E25108D0D005A1A84 /* BoxerViewController.m */; };
 		446F9F8825109DE4005A1A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F8725109DE4005A1A84 /* ViewController.m */; };
 		446F9F8B25110AB9005A1A84 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F9F8A25110AB9005A1A84 /* PlayingCard.m */; };
+		44A8A8EE2518B2E400EEA2FB /* ArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8A8ED2518B2E400EEA2FB /* ArrayObject.m */; };
+		44A8A8F12518B31C00EEA2FB /* ChildArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8A8F02518B31C00EEA2FB /* ChildArrayObject.m */; };
+		44A8A8F52518C9D900EEA2FB /* TypesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8A8F42518C9D900EEA2FB /* TypesTest.m */; };
+		44A8A8F82518CC4300EEA2FB /* ViewTypeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8A8F72518CC4300EEA2FB /* ViewTypeTestController.m */; };
+		44A8A8FB2518DDEF00EEA2FB /* StudentA.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8A8FA2518DDEF00EEA2FB /* StudentA.m */; };
+		44AFEDD32518916B00FBA2D5 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AFEDD22518916B00FBA2D5 /* NSArrayTest.m */; };
+		44AFEDD62518942400FBA2D5 /* ViewNSArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AFEDD52518942400FBA2D5 /* ViewNSArrayTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +72,20 @@
 		446F9F8725109DE4005A1A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		446F9F8925110AB9005A1A84 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
 		446F9F8A25110AB9005A1A84 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		44A8A8EC2518B2E400EEA2FB /* ArrayObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayObject.h; sourceTree = "<group>"; };
+		44A8A8ED2518B2E400EEA2FB /* ArrayObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayObject.m; sourceTree = "<group>"; };
+		44A8A8EF2518B31C00EEA2FB /* ChildArrayObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildArrayObject.h; sourceTree = "<group>"; };
+		44A8A8F02518B31C00EEA2FB /* ChildArrayObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildArrayObject.m; sourceTree = "<group>"; };
+		44A8A8F32518C9D900EEA2FB /* TypesTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypesTest.h; sourceTree = "<group>"; };
+		44A8A8F42518C9D900EEA2FB /* TypesTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypesTest.m; sourceTree = "<group>"; };
+		44A8A8F62518CC4300EEA2FB /* ViewTypeTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTypeTestController.h; sourceTree = "<group>"; };
+		44A8A8F72518CC4300EEA2FB /* ViewTypeTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTypeTestController.m; sourceTree = "<group>"; };
+		44A8A8F92518DDEF00EEA2FB /* StudentA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentA.h; sourceTree = "<group>"; };
+		44A8A8FA2518DDEF00EEA2FB /* StudentA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentA.m; sourceTree = "<group>"; };
+		44AFEDD12518916B00FBA2D5 /* NSArrayTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayTest.h; sourceTree = "<group>"; };
+		44AFEDD22518916B00FBA2D5 /* NSArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		44AFEDD42518942400FBA2D5 /* ViewNSArrayTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewNSArrayTestViewController.h; sourceTree = "<group>"; };
+		44AFEDD52518942400FBA2D5 /* ViewNSArrayTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewNSArrayTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +129,8 @@
 		4455EE75250E81D700E3305F /* obj-c-lecture */ = {
 			isa = PBXGroup;
 			children = (
+				44A8A8F22518C9B000EEA2FB /* AS Types 56m */,
+				44AFEDD02518913500FBA2D5 /* AS NSArray 45m */,
 				4412ED622512319B00B94FC2 /* AS Properties Parameters 39m */,
 				446F9F74251086D4005A1A84 /* AS Properties 45m */,
 				4455EE92250F775200E3305F /* AS Methods 1h */,
@@ -174,6 +197,34 @@
 				446F9F7E25108D0D005A1A84 /* BoxerViewController.m */,
 			);
 			path = "AS Properties 45m";
+			sourceTree = "<group>";
+		};
+		44A8A8F22518C9B000EEA2FB /* AS Types 56m */ = {
+			isa = PBXGroup;
+			children = (
+				44A8A8F32518C9D900EEA2FB /* TypesTest.h */,
+				44A8A8F42518C9D900EEA2FB /* TypesTest.m */,
+				44A8A8F62518CC4300EEA2FB /* ViewTypeTestController.h */,
+				44A8A8F72518CC4300EEA2FB /* ViewTypeTestController.m */,
+				44A8A8F92518DDEF00EEA2FB /* StudentA.h */,
+				44A8A8FA2518DDEF00EEA2FB /* StudentA.m */,
+			);
+			path = "AS Types 56m";
+			sourceTree = "<group>";
+		};
+		44AFEDD02518913500FBA2D5 /* AS NSArray 45m */ = {
+			isa = PBXGroup;
+			children = (
+				44AFEDD12518916B00FBA2D5 /* NSArrayTest.h */,
+				44AFEDD22518916B00FBA2D5 /* NSArrayTest.m */,
+				44AFEDD42518942400FBA2D5 /* ViewNSArrayTestViewController.h */,
+				44AFEDD52518942400FBA2D5 /* ViewNSArrayTestViewController.m */,
+				44A8A8EC2518B2E400EEA2FB /* ArrayObject.h */,
+				44A8A8ED2518B2E400EEA2FB /* ArrayObject.m */,
+				44A8A8EF2518B31C00EEA2FB /* ChildArrayObject.h */,
+				44A8A8F02518B31C00EEA2FB /* ChildArrayObject.m */,
+			);
+			path = "AS NSArray 45m";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,14 +301,21 @@
 				446F9F7F25108D0D005A1A84 /* BoxerViewController.m in Sources */,
 				4455EE98250FA49700E3305F /* ASChildClass.m in Sources */,
 				4455EE91250E83EF00E3305F /* Card.m in Sources */,
+				44A8A8F82518CC4300EEA2FB /* ViewTypeTestController.m in Sources */,
 				446F9F7725108844005A1A84 /* Boxer.m in Sources */,
 				4455EE7E250E81D700E3305F /* CardViewController.m in Sources */,
 				4412ED65251231DF00B94FC2 /* ASObject.m in Sources */,
+				44AFEDD32518916B00FBA2D5 /* NSArrayTest.m in Sources */,
+				44AFEDD62518942400FBA2D5 /* ViewNSArrayTestViewController.m in Sources */,
+				44A8A8FB2518DDEF00EEA2FB /* StudentA.m in Sources */,
 				446F9F8825109DE4005A1A84 /* ViewController.m in Sources */,
 				4455EE95250F77AE00E3305F /* ASParentClass.m in Sources */,
 				4455EE78250E81D700E3305F /* AppDelegate.m in Sources */,
 				4455EE89250E81D900E3305F /* main.m in Sources */,
+				44A8A8EE2518B2E400EEA2FB /* ArrayObject.m in Sources */,
 				446F9F8B25110AB9005A1A84 /* PlayingCard.m in Sources */,
+				44A8A8F52518C9D900EEA2FB /* TypesTest.m in Sources */,
+				44A8A8F12518B31C00EEA2FB /* ChildArrayObject.m in Sources */,
 				4412ED6125120E2600B94FC2 /* PlayingCardDeck.m in Sources */,
 				4412ED682512324600B94FC2 /* ASObjectViewController.m in Sources */,
 				4455EE7B250E81D700E3305F /* SceneDelegate.m in Sources */,
