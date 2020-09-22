@@ -10,8 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum{
+    MaleGender = 5,
+    FemaleGender = 10
+} ASGender;
+
 @interface StudentA : TypesTest
 @property (strong, nonatomic) NSString *name;
+@property (assign, nonatomic) ASGender *gender;
 @end
 
 NS_ASSUME_NONNULL_END

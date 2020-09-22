@@ -22,7 +22,7 @@
     TypesTest *types = [[TypesTest alloc] init];
     
     [types types];
-//
+    
 //    StudentA *studA = [[StudentA alloc] init];
 //    studA.name = @"I am Vitaliy";
 //    StudentA * studB = studA;
@@ -30,8 +30,8 @@
 //
 //    NSLog(@"Name stud is: %@",studA.name);
     
-    NSInteger a = 10;
-    NSInteger b = a;
+//    NSInteger a = 10;
+//    NSInteger b = a;
     
 //    b += 100;
 //
@@ -45,9 +45,29 @@
     
 //    NSLog(@"Third values,result = %zd, a = %zd, b = %zd", result, a, b);
     
-    NSInteger result = [self value:(NSInteger)a byReference:(NSInteger*)&b];
+//    NSInteger result = [self value:(NSInteger)a byReference:(NSInteger*)&b];
+//
+//    NSLog(@"result = %d, a = %zd, b = %zd", (int)result, a, b);
     
-    NSLog(@"result = %d, a = %zd, b = %zd", (int)result, a, b);
+//    StudentA *studAEnum = [[StudentA alloc] init];
+    
+//    [studAEnum setGender:MaleGender];
+//
+//    NSLog(@"%zd", [studAEnum gender]); //5
+    
+    CGRect rec;
+    
+    CGSize size;
+    size.height = 100;
+    size.width = 50;
+    
+    
+    CGPoint point;
+    point.x = 12;
+    point.y = 50;
+    
+    CGRectMake(0, 0, 100, 200);
+    CGSizeMake(100, 200);
 }
 
 
@@ -59,6 +79,7 @@
     
     return valueType;
 }
+
 
 /*
 #pragma mark - Navigation
