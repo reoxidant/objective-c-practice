@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Deck.h"
-#import "Card.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,10 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) initWithCardCount: (NSUInteger)count
                          usingDeck: (Deck*) deck;
 
-- (Card *) cardAtIndex: (NSUInteger) index;
-- (void) chooseCardAtIndex: (NSUInteger)index;
-
 @property (nonatomic, readonly) NSInteger score;
+
+- (void) chooseCardAtIndex: (NSUInteger) index;
+
+- (Card*) cardAtIndex: (NSInteger) index;
 
 @end
 

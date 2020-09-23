@@ -40,7 +40,6 @@
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex:index];
-        NSLog(@"Count cards %zd", [self.cards count]);
     }
     return randomCard;
 }
