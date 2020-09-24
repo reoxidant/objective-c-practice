@@ -42,6 +42,10 @@
     return self;
 }
 
+static const int MISTMATCH_PENALTY = 2;
+static const int MATCH_BONUS = 4;
+static const int COST_TO_CHOOSE = 1;
+
 - (void) chooseCardAtIndex:(NSUInteger)index
 {
     Card* card = [self cardAtIndex:index];
@@ -55,14 +59,18 @@
                 if(otherCard.isChosen && !card.isMatched){
                     int matchScore = [card match:@[otherCard]];
                     if(matchScore){
-                        self.score += matchScore;
+                        self.score += matchScore * MATCH_BONUS;
                         card.matched = YES;
                         otherCard.matched = YES;
                     }else{
-                        
+                        self.score -= MISTMATCH_PENALTY;
+                        otherCard.chosen = NO;
                     }
+                    break;
                 }
             }
+            self.score -= COST_TO_CHOOSE;
+            card.chosen = YES;
         }
     }
 }

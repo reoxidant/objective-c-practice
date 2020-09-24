@@ -40,20 +40,6 @@
     [self updateUI];
 }
 
-- (void) flipCardToBack: sender{
-    [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
-                      forState:UIControlStateNormal];
-    [sender setTitle:@""
-            forState:UIControlStateNormal];
-}
-
-- (void) flipCardToFront: sender andSetCardContents:(Card*) randomCard{
-    [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
-                      forState:UIControlStateNormal];
-    [sender setTitle:randomCard.contents
-            forState:UIControlStateNormal];
-}
-
 - (void) updateUI{
     for(UIButton *cardButton in self.cardButtons){
         NSUInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
