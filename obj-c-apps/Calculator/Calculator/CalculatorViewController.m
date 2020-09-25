@@ -14,19 +14,39 @@
 
 @implementation CalculatorViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (CalculatorBrain *)brain
+{
+    if(!brain) brain = [[CalculatorBrain alloc] init];
+    return brain;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction) digitPressed: (UIButton*) sender
+{
+    NSString *digit = [[sender titleLabel] text];
+    
+    //MARK: if user add more digits just append the number strings
+    if(userIsInTheMiddleOfTypingANumber)
+    {
+        [display setText:[[display text] stringByAppendingString:digit]];
+    }
+    else
+    {
+        [display setText:digit];
+        userIsInTheMiddleOfTypingANumber = YES;
+    }
 }
-*/
+
+- (IBAction) operationPressed: (UIButton *) sender
+{
+    //MARK: if operation = do not anything with operation just display it
+    if(userIsInTheMiddleOfTypingANumber)
+    {
+        [[self brain] setOperand:[[display text] doubleValue]];
+        userIsInTheMiddleOfTypingANumber = NO;
+    }
+    NSString *operation = [[sender titleLabel]text];
+    double result = [[self brain] performOperation:operation];
+    [display setText:[NSString stringWithFormat:@"%g", result]];
+}
 
 @end

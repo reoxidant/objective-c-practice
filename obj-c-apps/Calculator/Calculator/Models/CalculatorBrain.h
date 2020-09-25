@@ -11,6 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CalculatorBrain : NSObject
+{
+    double operand;
+    NSString *waitingOperation;
+    double waitingOperand;
+}
+
+- (void) setOperand:(double)aDouble;
+- (double)performOperation:(NSString*) operation;
 
 @end
 

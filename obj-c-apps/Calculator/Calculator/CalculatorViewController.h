@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
     IBOutlet UILabel *display;
     CalculatorBrain *brain;
+    BOOL userIsInTheMiddleOfTypingANumber;
 }
 
 - (IBAction) digitPressed: (UIButton*) sender;
