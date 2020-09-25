@@ -15,8 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
     double operand;
     NSString *waitingOperation;
     double waitingOperand;
+    bool renderACOperation;
 }
 
+- (BOOL) renderACOperation;
 - (void) setOperand:(double)aDouble;
 - (double)performOperation:(NSString*) operation;
 

@@ -15,6 +15,10 @@
     operand = aDouble;
 }
 
+- (BOOL) renderACOperation{
+    return renderACOperation;
+}
+
 - (void) performWaitingOperation
 {
     if([@"+" isEqual:waitingOperation])
@@ -49,11 +53,28 @@
     {
         operand = - operand;
     }
+    else if([@"AC" isEqual:operation])
+    {
+        waitingOperation = nil;
+        waitingOperand = 0;
+    }
+    else if([@"C" isEqual:operation])
+    {
+        operand = 0;
+        renderACOperation = YES;
+    }
     else
     {
-        [self performWaitingOperation]; //MARK: do first when a variable below is null
+        if([operation isEqual:@"="]){
+            //MARK: fix when click more and more operation button
+            [self performWaitingOperation];
+        }
+
         waitingOperation = operation;
         waitingOperand = operand;
+        
+        NSLog(@"operand %g", operand);
+        NSLog(@"waitingOperand %g", waitingOperand);
     }
     return operand;
 }

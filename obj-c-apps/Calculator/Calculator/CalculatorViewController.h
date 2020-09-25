@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CalculatorViewController : UIViewController
 {
     IBOutlet UILabel *display;
+    IBOutlet UIButton *deleteOperation;
     CalculatorBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
 }
