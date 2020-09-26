@@ -28,13 +28,36 @@
     //MARK: if user add more digits just append the number strings
     if(userIsInTheMiddleOfTypingANumber)
     {
-        if((![[display text] containsString:@"."] && [digit isEqual:@"."]) || ![digit isEqual:@"."]){
-           [display setText:[[display text] stringByAppendingString:digit]];
+        if
+        (
+            ((![[display text] containsString:@"."] && [digit isEqual:@"."]) ||
+            (![digit isEqual:@"."]))
+        )
+        {
+            BOOL showNotZeroOnTheScreen = ![[[display text] substringFromIndex:0] isEqual:@"0"];
+            BOOL pressNotNullDig = ![digit isEqual:@"0"];
+            
+            if(showNotZeroOnTheScreen){
+                if(pressNotNullDig){
+                    [display setText:[[display text] stringByAppendingString:digit]];
+                }else{
+                    [display setText:[[display text] stringByAppendingString:@"0"]];
+                }
+            }else{
+                [display setText:digit];
+            }
         }
     }
     else
     {
-        [display setText:([digit isEqual:@"."])? [NSString stringWithFormat:@"%@%@", [display text], digit]  : digit];
+        if([digit isEqual:@"."])
+        {
+            [display setText:[NSString stringWithFormat:@"%@%@", [display text], digit]];
+        }
+        else
+        {
+            [display setText:digit];
+        }
         userIsInTheMiddleOfTypingANumber = YES;
         [self renderACButtonOperation:NO];
     }

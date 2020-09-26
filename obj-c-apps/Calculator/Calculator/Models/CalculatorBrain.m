@@ -19,7 +19,7 @@
     return renderACOperation;
 }
 
-- (void) performWaitingOperation
+- (void) performWaitingOperation: operation
 {
     if([@"+" isEqual:waitingOperation])
     {
@@ -31,13 +31,17 @@
     }
     else if ([@"-" isEqual:waitingOperation])
     {
-        operand = waitingOperand - operand;
+        if(waitingOperand >= operand){
+            operand = operand - waitingOperand;
+        }else{
+            operand = waitingOperand - operand;
+        }
     }
     else if([@"/" isEqual:waitingOperation])
     {
         if(operand)
         {
-            operand = waitingOperand / operand;
+            operand = operand / waitingOperand;
         }
     }
 }
@@ -60,6 +64,7 @@
     }
     else if([@"C" isEqual:operation])
     {
+        waitingOperand = operand;
         operand = 0;
         renderACOperation = YES;
     }
@@ -67,11 +72,13 @@
     {
         if([operation isEqual:@"="]){
             //MARK: fix when click more and more operation button
-            [self performWaitingOperation];
+            [self performWaitingOperation: operation];
+            
         }
-
-        waitingOperation = operation;
-        waitingOperand = operand;
+        if(operand && ![operation isEqual:@"="]){
+            waitingOperation = operation;
+            waitingOperand = operand;
+        }
         
         NSLog(@"operand %g", operand);
         NSLog(@"waitingOperand %g", waitingOperand);
