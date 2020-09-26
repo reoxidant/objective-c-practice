@@ -44,20 +44,17 @@
                     [display setText:[[display text] stringByAppendingString:@"0"]];
                 }
             }else{
-                [display setText:digit];
+                if([digit isEqual:@"."]){
+                    [display setText:[[display text] stringByAppendingString:digit]];
+                }else{
+                  [display setText:digit];
+                }
             }
         }
     }
     else
     {
-        if([digit isEqual:@"."])
-        {
-            [display setText:[NSString stringWithFormat:@"%@%@", [display text], digit]];
-        }
-        else
-        {
-            [display setText:digit];
-        }
+        [display setText:([digit isEqual:@"."])? [NSString stringWithFormat:@"%@%@", [display text], digit]  : digit];
         userIsInTheMiddleOfTypingANumber = YES;
         [self renderACButtonOperation:NO];
     }
