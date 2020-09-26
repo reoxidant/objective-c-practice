@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
     double operand;
     NSString *waitingOperation;
     double waitingOperand;
+    double delimer;
     bool renderACOperation;
 }
 
