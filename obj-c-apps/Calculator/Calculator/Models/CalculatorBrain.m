@@ -6,9 +6,7 @@
 //  Copyright © 2020 Виталий Шаповалов. All rights reserved.
 //
 
-//MARK: NEED TO FIX C OPERATION
-//MARK: NEED TO FIX OPERAION - = FOR EXAMPLE 5 - = 0, = -5
-//MARK: NEED TO FIX OPERAION / = FOR EXAMPLE 5 / = 1, = 0.2
+//MARK: NEED TO FIX BUG EXAMPLE 5 - and many operations
 
 #import "CalculatorBrain.h"
 
@@ -23,43 +21,60 @@
     return renderACOperation;
 }
 
-- (void) operationWithEqual: (double) waitingOperandResult
+- (void) operationWithEqual: (double) waitingOperandResult lastOperation: (NSString*) operation
 {
-    if(!delimer)
-    {
-        delimer = operand;
-        waitingOperand = waitingOperandResult;
-        operand = waitingOperandResult;
-    }
-    else
-    {
-        waitingOperand = waitingOperandResult;
-        operand = waitingOperandResult;
+    if([operation isEqual:@"="]){
+        if(!delimer)
+           {
+               delimer = operand;
+               waitingOperand = waitingOperandResult;
+               operand = waitingOperandResult;
+           }
+           else
+           {
+               waitingOperand = waitingOperandResult;
+               operand = waitingOperandResult;
+           }
     }
 }
 
-- (void) performWaitingOperation
+- (void) performWaitingOperation: operation
 {
     if([@"+" isEqual:waitingOperation])
     {
-        operand = waitingOperand + operand;
+        [self operationWithEqual:
+        (delimer) ? waitingOperand + delimer : waitingOperand + operand
+                               lastOperation : operation
+        ];
     }
     else if ([@"*" isEqual:waitingOperation])
     {
-        [self operationWithEqual:(delimer) ? waitingOperand * delimer : waitingOperand * operand];
+        [self operationWithEqual:
+         (delimer) ? waitingOperand * delimer : waitingOperand * operand
+                                lastOperation : operation
+         ];
     }
     else if ([@"-" isEqual:waitingOperation])
     {
-        [self operationWithEqual:(delimer) ? waitingOperand - delimer : waitingOperand - operand];
+        [self operationWithEqual:
+         (delimer) ? waitingOperand - delimer : waitingOperand - operand
+                                lastOperation : operation
+         ];
     }
     else if([@"/" isEqual:waitingOperation])
     {
         if(operand)
         {
             if(operand <= waitingOperand){
-                [self operationWithEqual:(delimer) ? waitingOperand / delimer : waitingOperand / operand];
+                [self operationWithEqual:
+                 (delimer) ? waitingOperand / delimer : waitingOperand / operand
+                                        lastOperation : operation
+                 ];
             }else{
-                [self operationWithEqual:(delimer) ? delimer / waitingOperand : operand / waitingOperand];
+                [self operationWithEqual:
+                 (delimer) ? delimer / waitingOperand : operand / waitingOperand
+                                        lastOperation : operation
+                 ];
             }
         }
     }
@@ -83,15 +98,13 @@
     }
     else if([@"C" isEqual:operation])
     {
-        waitingOperand = operand;
         operand = 0;
         renderACOperation = YES;
     }
     else
     {
-        if([operation isEqual:@"="]){
-            [self performWaitingOperation];
-        }
+        [self performWaitingOperation: operation];
+
         if(![operation isEqual:@"="]){
             delimer = 0;
             waitingOperation = operation;
