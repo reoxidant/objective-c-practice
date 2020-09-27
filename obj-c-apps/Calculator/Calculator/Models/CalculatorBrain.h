@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     double waitingOperand;
     double delimer;
     bool renderACOperation;
+    double storage;
 }
 
 - (BOOL) renderACOperation;

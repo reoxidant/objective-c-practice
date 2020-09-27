@@ -9,6 +9,7 @@
 //MARK: NEED TO FIX BUG EXAMPLE 5 - and many operations
 
 #import "CalculatorBrain.h"
+#include <math.h>
 
 @implementation CalculatorBrain
 
@@ -17,13 +18,15 @@
     operand = aDouble;
 }
 
-- (BOOL) renderACOperation{
+- (BOOL) renderACOperation
+{
     return renderACOperation;
 }
 
 - (void) operationWithEqual: (double) waitingOperandResult lastOperation: (NSString*) operation
 {
-    if([operation isEqual:@"="]){
+    if([operation isEqual:@"="])
+    {
         if(!delimer)
            {
                delimer = operand;
@@ -75,8 +78,39 @@
 
 - (double)performOperation:(NSString*) operation
 {
-    //MARK: ignore if operation is =
-    if([operation isEqual:@"sqrt"])
+    if([operation isEqual:@"Store"] || [operation isEqual:@"Recall"] || [operation isEqual:@"m+"])
+    {
+        if([operation isEqual:@"Store"])
+        {
+            storage = operand;
+        }
+        else if([operation isEqual:@"Recall"])
+        {
+            if(storage)
+            {
+                operand = storage;
+            }
+        }
+        else if([operation isEqual:@"m+"])
+        {
+            if(operand)
+            {
+                storage += operand;
+            }
+        }
+    }
+    else if([operation isEqual:@"sin"] || [operation isEqual:@"cos"])
+    {
+        operand = ([operation isEqual:@"sin"]) ? sin((operand*M_PI)/180.0) : cos((operand*M_PI)/180.0);
+    }
+    else if([operation isEqual:@"1/x"])
+    {
+        if(operand)
+        {
+           operand = 1 / operand;
+        }
+    }
+    else if([operation isEqual:@"sqrt"])
     {
         operand = sqrt(operand);
     }
@@ -84,21 +118,25 @@
     {
         operand = - operand;
     }
-    else if([@"AC" isEqual:operation])
+    else if([@"AC" isEqual:operation] || [@"C" isEqual:operation])
     {
-        waitingOperation = nil;
-        waitingOperand = 0;
-    }
-    else if([@"C" isEqual:operation])
-    {
-        operand = 0;
-        renderACOperation = YES;
+        if([@"AC" isEqual:operation])
+        {
+            waitingOperation = nil;
+            waitingOperand = 0;
+        }
+        else
+        {
+            operand = 0;
+            renderACOperation = YES;
+        }
     }
     else
     {
         [self performWaitingOperation: operation];
 
-        if(![operation isEqual:@"="]){
+        if(![operation isEqual:@"="])
+        {
             delimer = 0;
             waitingOperation = operation;
             waitingOperand = operand;
