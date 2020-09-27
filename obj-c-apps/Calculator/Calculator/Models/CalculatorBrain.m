@@ -65,17 +65,10 @@
     {
         if(operand)
         {
-            if(operand <= waitingOperand){
-                [self operationWithEqual:
-                 (delimer) ? waitingOperand / delimer : waitingOperand / operand
-                                        lastOperation : operation
-                 ];
-            }else{
-                [self operationWithEqual:
-                 (delimer) ? delimer / waitingOperand : operand / waitingOperand
-                                        lastOperation : operation
-                 ];
-            }
+            [self operationWithEqual:
+             (delimer) ? waitingOperand / delimer : waitingOperand / operand
+                                    lastOperation : operation
+             ];
         }
     }
 }
