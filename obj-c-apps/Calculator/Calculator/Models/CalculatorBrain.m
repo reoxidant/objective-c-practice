@@ -23,6 +23,11 @@
     return renderACOperation;
 }
 
+- (NSString*) alertError
+{
+    return alertError;
+}
+
 - (void) operationWithEqual: (double) waitingOperandResult lastOperation: (NSString*) operation
 {
     if([operation isEqual:@"="])
@@ -112,7 +117,9 @@
     }
     else if([operation isEqual:@"sqrt"])
     {
-        operand = sqrt(operand);
+        if(operand > 0){
+            operand = sqrt(operand);
+        }
     }
     else if([@"+/-" isEqual:operation])
     {
@@ -142,7 +149,26 @@
             waitingOperand = operand;
         }
     }
+    [self checkOnError: operation];
     return operand;
+}
+//MARK: FIX Alert errors
+- (void) checkOnError: (NSString*) operation
+{
+
+        if(!operand)
+        {
+            alertError = @"Divide by zero!";
+        }
+        else if(operand < 0)
+        {
+            alertError = @"Square root of negative number!";
+        }
+        else
+        {
+            alertError = nil;
+        }
+
 }
 
 @end

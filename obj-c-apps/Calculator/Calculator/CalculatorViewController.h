@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     IBOutlet UIButton *deleteOperation;
     CalculatorBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
+    UIAlertController *alertError;
 }
 
 - (IBAction) digitPressed: (UIButton*) sender;

@@ -18,11 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
     double delimer;
     bool renderACOperation;
     double storage;
+    NSString *alertError;
 }
 
 - (BOOL) renderACOperation;
 - (void) setOperand:(double)aDouble;
 - (double)performOperation:(NSString*) operation;
+- (NSString*) alertError;
 
 @end
 

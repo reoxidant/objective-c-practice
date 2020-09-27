@@ -74,6 +74,12 @@
     if([operation isEqual:@"C"]){
         [self renderACButtonOperation:[[self brain] renderACOperation]];
     }
+        
+    if ([[self brain] alertError])
+    {
+        [self showErrorOnTheScreenBy:[[self brain] alertError]];
+    };
+    
     [display setText:[NSString stringWithFormat:@"%g", result]];
 }
 
@@ -83,6 +89,15 @@
     }else{
         [deleteOperation setTitle:@"C" forState:UIControlStateNormal];
     }
+}
+
+- (void) showErrorOnTheScreenBy: (NSString*) errMessage
+{
+    alertError = [UIAlertController alertControllerWithTitle:@"Error! You are using the wrong operation!" message:errMessage preferredStyle:UIAlertControllerStyleAlert];
+      
+    [alertError addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+      
+    [self presentViewController:alertError animated:YES completion:nil];
 }
 
 @end
