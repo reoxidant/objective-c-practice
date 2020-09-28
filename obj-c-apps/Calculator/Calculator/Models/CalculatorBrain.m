@@ -152,7 +152,7 @@
     [self checkOnError: operation];
     return operand;
 }
-//MARK: FIX Alert errors
+
 - (void) checkOnError: (NSString*) operation
 {
     if(([waitingOperation isEqual:@"/"] && [operation isEqual:@"="]) || [operation isEqual:@"sqrt"])
