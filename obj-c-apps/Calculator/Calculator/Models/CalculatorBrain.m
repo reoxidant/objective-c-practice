@@ -155,8 +155,9 @@
 //MARK: FIX Alert errors
 - (void) checkOnError: (NSString*) operation
 {
-
-        if(!operand)
+    if(([waitingOperation isEqual:@"/"] && [operation isEqual:@"="]) || [operation isEqual:@"sqrt"])
+    {
+        if(!operand && waitingOperand != operand)
         {
             alertError = @"Divide by zero!";
         }
@@ -168,7 +169,11 @@
         {
             alertError = nil;
         }
-
+    }
+    else
+    {
+        alertError = nil;
+    }
 }
 
 @end
