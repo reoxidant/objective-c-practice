@@ -79,7 +79,7 @@
     {
         [self showErrorOnTheScreenBy:[[self brain] alertError]];
     };
-    
+    [memoryStorage setText:[NSString stringWithFormat:@"%g", [[self brain] storageOfMemory]]];
     [display setText:[NSString stringWithFormat:@"%g", result]];
 }
 

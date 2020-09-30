@@ -14,10 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CalculatorViewController : UIViewController
 {
     IBOutlet UILabel *display;
+    IBOutlet UILabel *memoryStorage;
     IBOutlet UIButton *deleteOperation;
     CalculatorBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
     UIAlertController *alertError;
+    
 }
 
 - (IBAction) digitPressed: (UIButton*) sender;

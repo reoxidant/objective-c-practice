@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) setOperand:(double)aDouble;
 - (double)performOperation:(NSString*) operation;
 - (NSString*) alertError;
+- (double) storageOfMemory;
 
 @end
 

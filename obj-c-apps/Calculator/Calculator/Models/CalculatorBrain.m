@@ -176,4 +176,9 @@
     }
 }
 
+- (double) storageOfMemory
+{
+    return storage;
+}
+
 @end
