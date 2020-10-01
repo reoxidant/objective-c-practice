@@ -79,7 +79,18 @@
     {
         [self showErrorOnTheScreenBy:[[self brain] alertError]];
     };
-    [memoryStorage setText:[NSString stringWithFormat:@"%g", [[self brain] storageOfMemory]]];
+    if([operation isEqual:@"Clear"])
+        {
+        [[self brain] clearStorage];
+        [memoryStorage setText:[NSString stringWithFormat:@"%@", @""]];
+    }
+    else
+    {
+        if(!([[self brain] storageOfMemory] == 0))
+        {
+             [memoryStorage setText:[NSString stringWithFormat:@"%g", [[self brain] storageOfMemory]]];
+        }
+    }
     [display setText:[NSString stringWithFormat:@"%g", result]];
 }
 

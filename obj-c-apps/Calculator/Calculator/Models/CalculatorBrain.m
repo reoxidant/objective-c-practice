@@ -181,4 +181,9 @@
     return storage;
 }
 
+- (void) clearStorage
+{
+    storage = 0;
+}
+
 @end
