@@ -108,6 +108,10 @@
     {
         operand = ([operation isEqual:@"sin"]) ? sin((operand*M_PI)/180.0) : cos((operand*M_PI)/180.0);
     }
+    else if([operation isEqual:@"π"])
+    {
+        operand = M_PI;
+    }
     else if([operation isEqual:@"1/x"])
     {
         if(operand)
@@ -132,11 +136,10 @@
             waitingOperation = nil;
             waitingOperand = 0;
         }
-        else
         {
-            operand = 0;
             renderACOperation = YES;
         }
+        operand = 0;
     }
     else
     {
