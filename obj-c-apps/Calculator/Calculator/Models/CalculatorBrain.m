@@ -106,7 +106,14 @@
     }
     else if([operation isEqual:@"sin"] || [operation isEqual:@"cos"])
     {
-        operand = ([operation isEqual:@"sin"]) ? sin((operand*M_PI)/180.0) : cos((operand*M_PI)/180.0);
+        double numOfPI = M_PI;
+        if([operation isEqual:@"sin"])
+        {
+            numOfPI = (operand != 180) ? M_PI : 0;
+        }
+        operand = ([operation isEqual:@"sin"]) ?
+        sin(operand * (numOfPI) / 180.0) :
+        cos(operand* (numOfPI) /180.0);
     }
     else if([operation isEqual:@"π"])
     {
