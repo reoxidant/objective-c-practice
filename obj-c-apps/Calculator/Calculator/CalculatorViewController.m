@@ -37,16 +37,25 @@
             BOOL showNotZeroOnTheScreen = ![[[display text] substringFromIndex:0] isEqual:@"0"];
             BOOL pressNotNullDig = ![digit isEqual:@"0"];
             
-            if(showNotZeroOnTheScreen){
-                if(pressNotNullDig){
+            if(showNotZeroOnTheScreen)
+            {
+                if(pressNotNullDig)
+                {
                     [display setText:[[display text] stringByAppendingString:digit]];
-                }else{
+                }
+                else
+                {
                     [display setText:[[display text] stringByAppendingString:@"0"]];
                 }
-            }else{
-                if([digit isEqual:@"."]){
+            }
+            else
+            {
+                if([digit isEqual:@"."])
+                {
                     [display setText:[[display text] stringByAppendingString:digit]];
-                }else{
+                }
+                else
+                {
                   [display setText:digit];
                 }
             }
@@ -91,6 +100,7 @@
              [memoryStorage setText:[NSString stringWithFormat:@"%g", [[self brain] storageOfMemory]]];
         }
     }
+    [historyOfOperation setText:[[self brain] historyOperation]];
     [display setText:[NSString stringWithFormat:@"%g", result]];
 }
 

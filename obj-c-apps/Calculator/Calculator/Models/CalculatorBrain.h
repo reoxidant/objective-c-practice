@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
     bool renderACOperation;
     double storage;
     NSString *alertError;
+    NSString *historyOperation;
 }
 
 - (BOOL) renderACOperation;
@@ -27,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*) alertError;
 - (double) storageOfMemory;
 - (void) clearStorage;
+- (NSString*) historyOperation;
 
 @end
 

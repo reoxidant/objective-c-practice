@@ -15,11 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 {
     IBOutlet UILabel *display;
     IBOutlet UILabel *memoryStorage;
+    IBOutlet UILabel *historyOfOperation;
     IBOutlet UIButton *deleteOperation;
     CalculatorBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
     UIAlertController *alertError;
-    
 }
 
 - (IBAction) digitPressed: (UIButton*) sender;

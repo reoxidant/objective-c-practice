@@ -30,7 +30,7 @@
 
 - (void) operationWithEqual: (double) waitingOperandResult lastOperation: (NSString*) operation
 {
-    if([operation isEqual:@"="])
+    if([operation isEqual:@"="] || waitingOperand != operand)
     {
         if(!delimer)
            {
@@ -160,6 +160,7 @@
         }
     }
     [self checkOnError: operation];
+    historyOperation = [NSString stringWithFormat:@"%g %@", waitingOperand, waitingOperation];
     return operand;
 }
 
@@ -194,6 +195,11 @@
 - (void) clearStorage
 {
     storage = 0;
+}
+
+- (NSString*) historyOperation
+{
+    return historyOperation;
 }
 
 @end
