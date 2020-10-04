@@ -140,6 +140,7 @@
         {
             waitingOperation = nil;
             waitingOperand = 0;
+            historyOperation = @"";
         }
         {
             renderACOperation = YES;
@@ -159,7 +160,9 @@
         }
     }
     [self checkOnError: operation];
-    historyOperation = [NSString stringWithFormat:@"%g %@", waitingOperand, waitingOperation];
+    if(waitingOperand && waitingOperation){
+        historyOperation = [NSString stringWithFormat:@"%g %@", (delimer) ? delimer : waitingOperand, waitingOperation];
+    }
     return operand;
 }
 
