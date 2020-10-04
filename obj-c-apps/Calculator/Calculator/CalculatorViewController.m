@@ -23,6 +23,7 @@
 
 - (IBAction) digitPressed: (UIButton*) sender
 {
+    [[self brain] changeStateBlockAnyOperation];
     NSString *digit = [[sender titleLabel] text];
     
     //MARK: if user add more digits just append the number strings

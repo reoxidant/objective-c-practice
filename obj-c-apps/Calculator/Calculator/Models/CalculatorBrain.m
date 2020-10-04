@@ -30,20 +30,18 @@
 
 - (void) operationWithEqual: (double) waitingOperandResult lastOperation: (NSString*) operation
 {
-    if([operation isEqual:@"="] || waitingOperand != operand)
+    if(!delimer)
     {
-        if(!delimer)
-           {
-               delimer = operand;
-               waitingOperand = waitingOperandResult;
-               operand = waitingOperandResult;
-           }
-           else
-           {
-               waitingOperand = waitingOperandResult;
-               operand = waitingOperandResult;
-           }
+        delimer = operand;
+        waitingOperand = waitingOperandResult;
+        operand = waitingOperandResult;
     }
+    else
+    {
+        waitingOperand = waitingOperandResult;
+        operand = waitingOperandResult;
+    }
+    blockAnyOperation = YES;
 }
 
 - (void) performWaitingOperation: operation
@@ -51,22 +49,22 @@
     if([@"+" isEqual:waitingOperation])
     {
         [self operationWithEqual:
-        (delimer) ? waitingOperand + delimer : waitingOperand + operand
-                               lastOperation : operation
-        ];
+         (delimer) ? waitingOperand + delimer : waitingOperand + operand
+                  lastOperation : operation
+         ];
     }
     else if ([@"*" isEqual:waitingOperation])
     {
         [self operationWithEqual:
          (delimer) ? waitingOperand * delimer : waitingOperand * operand
-                                lastOperation : operation
+                  lastOperation : operation
          ];
     }
     else if ([@"-" isEqual:waitingOperation])
     {
         [self operationWithEqual:
          (delimer) ? waitingOperand - delimer : waitingOperand - operand
-                                lastOperation : operation
+                  lastOperation : operation
          ];
     }
     else if([@"/" isEqual:waitingOperation])
@@ -75,7 +73,7 @@
         {
             [self operationWithEqual:
              (delimer) ? waitingOperand / delimer : waitingOperand / operand
-                                    lastOperation : operation
+                      lastOperation : operation
              ];
         }
     }
@@ -123,7 +121,7 @@
     {
         if(operand)
         {
-           operand = 1 / operand;
+            operand = 1 / operand;
         }
     }
     else if([operation isEqual:@"sqrt"])
@@ -150,8 +148,9 @@
     }
     else
     {
-        [self performWaitingOperation: operation];
-
+        if(!blockAnyOperation || [operation isEqual:@"="]){
+            [self performWaitingOperation: operation];
+        }
         if(![operation isEqual:@"="])
         {
             delimer = 0;
@@ -200,6 +199,11 @@
 - (NSString*) historyOperation
 {
     return historyOperation;
+}
+
+- (void) changeStateBlockAnyOperation
+{
+    blockAnyOperation = NO;
 }
 
 @end

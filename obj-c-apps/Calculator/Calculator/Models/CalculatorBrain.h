@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
     double storage;
     NSString *alertError;
     NSString *historyOperation;
+    BOOL blockAnyOperation;
 }
 
 - (BOOL) renderACOperation;
@@ -29,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (double) storageOfMemory;
 - (void) clearStorage;
 - (NSString*) historyOperation;
+- (void) changeStateBlockAnyOperation;
 
 @end
 
